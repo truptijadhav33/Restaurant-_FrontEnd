@@ -1,0 +1,112 @@
+/* Reset & Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    border: none;
+    outline: none;
+    text-decoration: none;
+}
+
+:root {
+    --primary: #06ffd6;
+    --subprime: #58e5f8;
+    --secondary: #434b53;
+    --bg: #ffffff;
+    --section-bg: #fcf7f7;
+    --link: #ffffff;
+    --shadow: rgba(57, 53, 105, 0.486);
+    --hov: #068FFF;
+}
+
+/* Main Container (Background Image) */
+.container {
+    height: 100vh;
+    background: url("../img/event1.jpg") no-repeat center center / cover;
+}
+.container::before{
+    content: "";
+    background: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+/* Navbar Styling */
+.nav_Container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px 20px;
+    background: rgba(255, 255, 255, 0.1); /* Transparent black */
+    width: 100%;
+    position: fixed; /* Fixed at top */
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0px 0 18px  rgba(0, 0, 0, 0.5);
+}
+
+/* Logo */
+.logo img {
+    height: 70px;
+    margin: 0 10px;
+}
+
+/* Navbar Links */
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+.navbar li {
+    padding: 10px;
+}
+
+.navbar a {
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px 15px;
+    transition: 0.3s;
+    color: var(--primary);
+}
+.btn{
+    color: var(--bg);
+    background-color: var(--primary);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.btn a{
+    color: var(--bg);
+}
+
+/* Dropdown Styling */
+.nav_Container .dropdown ul {
+    position: absolute;
+    display: none; /* Initially hidden */
+    background: var(--section-bg);
+    padding: 10px 0;
+    box-shadow: 0px 0px 10px var(--shadow);
+}
+
+.nav_Container .dropdown ul li {
+    min-width: 150px;
+    padding: 8px 15px;
+}
+
+/* Show Dropdown on Hover */
+.nav_Container .dropdown:hover ul {
+    display: block;
+}
