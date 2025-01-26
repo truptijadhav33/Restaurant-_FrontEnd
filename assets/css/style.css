@@ -81,7 +81,7 @@
 }
 .btn{
     color: var(--bg);
-    background-color: var(--primary);
+    background-color: #c8a97e;
     border-radius: 5px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
