@@ -3,19 +3,20 @@
 
 <head> 
     <title>Fusion Flavor</title> 
+    <link rel="stylesheet" href="./assets/css/Reservation.css">
 </head> 
 
 <body> 
-     
-        <h2>Fusion Flavor</h2> 
+        
+        <h2>Flavour Fusion</h2> 
         <h2>Nagar - Manmad Highway</h2> 
         <h2>Rahuri-413705</h2> 
         
-        <h3>***Booking Only For Today***</h3> 
+        <h3>**Book Your Table Now!!**</h3> 
         </br></br> 
 
-        <form action="/server"> 
-            <table> 
+        <form id="form" action="/server"> 
+            <table id ="table" class="center-table"border="black"> 
                 <tr> 
                     <td>Name:</td> 
                     <td><input type="text" name="name"required /><br /><br /> 
@@ -32,12 +33,8 @@
                     <br /><br /> 
                     </td> 
                 </tr> 
-                
-                <tr> 
-                    <td><input type="submit" name="submit"value="Submit" /> 
-                    </td> 
-                </tr> 
             </table> 
+            <button id="btn">Submit</button>
         </form> 
 
 </body> 
