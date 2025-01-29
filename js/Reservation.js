@@ -1,5 +1,5 @@
 let btn=document.querySelector("button");
 console.dir(btn);
-btn.onclick=function(){
+btn.onsubmit=function(){
     alert(" Congratulations !! Your Table was book !!")
 }
