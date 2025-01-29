@@ -4,39 +4,72 @@
 <head> 
     <title>Fusion Flavor</title> 
     <link rel="stylesheet" href="./assets/css/Reservation.css">
+    <link rel="stylesheet" href="./assets/img/bg_3.jpg">
 </head> 
 
 <body> 
-        
+    <div class="div1">
+    <p clas="para">
         <h2>Flavour Fusion</h2> 
         <h2>Nagar - Manmad Highway</h2> 
         <h2>Rahuri-413705</h2> 
-        
-        <h3>**Book Your Table Now!!**</h3> 
+    </p>
+        <h1><b><i>*BOOK YOUR TABLE NOW!!!*</i></b></h1> 
         </br></br> 
 
-        <form id="form" action="/server"> 
-            <table id ="table" class="center-table"border="black"> 
+        <form id="form" action="/server">
+            
+             <!-- <table id ="table" class="center-table"border="black"> 
                 <tr> 
-                    <td>Name:</td> 
-                    <td><input type="text" name="name"required /><br /><br /> 
+                    <td><b>Name</b></td> 
+                    <td><input type="text"placeholder="enter your name"id="name" name="name"required /><br /><br /> 
                     </td> 
                 </tr> 
                 <tr> 
-                    <td>Total Number Of Customer:</td> 
-                    <td><input type="text" name="value"required /><br /><br /> 
+                    <td><b >Total Number Of Customer:</b></td> 
+                    <td><input type="text"placeholder="enter total no of customers" name="value"required /><br /><br /> 
                     </td> 
                 </tr> 
                 <tr> 
-                    <td>Time (12 Hours Format):</td> 
-                    <td><input type="text" name="time"required />
+                    <td><b>Time (12 Hours Format):</b></td> 
+                    <td><input type="text" placeholder="enter time"name="time"required />
                     <br /><br /> 
                     </td> 
                 </tr> 
-            </table> 
-            <button id="btn">Submit</button>
-        </form> 
+                <tr>
+                    <td><b>Phone no:</b></td>
+                    <td><input type="number"placeholder="enter phone number" name="number"/>
+                    <br/> <br/>
+                    </td>
+                </tr>
+                <tr>
+                    <td><b>Email:</b></td>
+                    <td><input type="emial"placeholder="enter email id" name="email"/></td>
+                    <br/> <br/> -->
+                <!-- </tr>
+             </table> -->
+             <div class="div2">
+                <label for username>Name</label><br>
+                <input type="text"id="username" placeholder="enter username"/><br>
 
+                <label for username>Total number of Customers</label><br>
+                <input type="number"id="total no" placeholder="enter no of customers"/><br>
+                <label for username>Time</label><br>
+                <input type="time"id="time" placeholder="enter time"/><br>
+                <label for username>Phone number</label><br>
+                <input type="number"id="phone_no" placeholder="enter phone no"/><br>
+                <label for username>Email Id</label><br>
+                <input type="email"id="email" placeholder="enter email id"/><br>
+                
+                
+            </div> 
+             
+             <button id="btn">Confirm Reservation</button>
+        
+           
+        </form> 
+    </div>
+<script src="./js/Reservation.js"></script>
 </body> 
 
 

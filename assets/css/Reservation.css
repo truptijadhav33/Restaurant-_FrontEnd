@@ -1,18 +1,54 @@
-body{
-    text-align: center; /* all text in center */
-    margin:0;
+div{
+    background-image: url("../img/bg_3.jpg");
+    background-size: cover; /* cover ensures the image covers the entire background */
+    height: 100vh;               /* Sets the height of the body to 100% of the viewport height */
+    margin: 0;   
+    background-repeat: no-repeat;
+    background-position: center;
    
+    }
+    
+
+.div2{
+        background-color: white;
+        margin-left: 200px ;
+        height: 400px;
+        width: 600px; 
+        text-align: left;
+        background-color: white;
+ }  
+h2{
+    margin-left: 200px;
 }
-#btn{
-    margin-top: 15px;
+ /* #table{
+    background-color: #ffffff;
    
+   
+}  */
+
+  
+#btn{
+
+   margin-left: 400px;
+   height: 40px;
+   width: 200px;
+   background-color: rgb(250, 223, 188);
 }
 #btn:hover{
-    box-shadow: 2px 2px 2px;
+    box-shadow: 4px 4px 4px;
 }
+h1{
+    margin-left: 250px;
+    font-weight: 700;
+    color: black;
+    margin-top: 40px;
+}
+/* .center-table {
+   padding: 10px;
+    margin-left: 200px;
+   
+    height: 400px;
+    width: 600px; 
+    text-align: left;
+} */
 
-.center-table {
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%; /* You can adjust the width as needed */
-}
