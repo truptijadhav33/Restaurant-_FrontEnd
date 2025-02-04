@@ -212,6 +212,58 @@
     -o-border-radius: 50%;
 }
 
+/* About style*/
+
+#about .about-container{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+}
+.about-container .about-headline{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 20px;
+}
+.about-container .about-headline h3{
+    font-size: 20px;
+    font-weight: 800;
+
+}
+.about-container .about-headline h5{
+    padding: 10px 20px;
+    font-size: 16px;
+}
+.about-content{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+.about-content .about-img img{
+    height: 600px;
+}
+.about-content .about-text{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 20px;
+}
+.about-content .about-text .about-item{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px;
+}
+.about-content .about-text .about-item h3{
+    font-size: 18px;
+    font-weight: 800;
+    padding: 20px 0;
+}
+.about-content .about-text .about-item p{
+    font-size: 14px;
+}
+
 
 
 
