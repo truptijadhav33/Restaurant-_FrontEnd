@@ -29,31 +29,9 @@
     - custom css link
   -->
   <link rel="stylesheet" href="./assets/css/style.css">
-
-  <!-- 
-    - preload images
-  -->
-  <link rel="preload" as="image" href="./assets/images/hero-slider-1.jpg">
-  <link rel="preload" as="image" href="./assets/images/hero-slider-2.jpg">
-  <link rel="preload" as="image" href="./assets/images/hero-slider-3.jpg">
-
 </head>
 
 <body id="top">
-
-  <!-- 
-    - #PRELOADER
-  -->
-
-  <div class="preload" data-preaload>
-    <div class="circle"></div>
-    <p class="text">Flavor Fusion</p>
-  </div>
-
-
-
-
-
   <!-- 
     - #TOP BAR
   -->
@@ -149,7 +127,7 @@
           </li>
 
           <li class="navbar-item">
-            <a href="./contact" class="navbar-link hover-underline">
+            <a href="#footer" class="navbar-link hover-underline">
               <span class="span">Contact</span>
             </a>
           </li>
@@ -177,8 +155,8 @@
 
       </nav>
 
-      <a href="#" class="btn btn-secondary">
-        <span class="text text-1">Find A Table</span>
+      <a href="./table.html" class="btn btn-secondary">
+        <span class="text text-1">Book A Table</span>
       </a>
 
       <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
@@ -187,7 +165,54 @@
         <span class="line line-3"></span>
       </button>
 
-      <div class="overlay" data-nav-toggler data-overlay></div>
+      <div class="overlay" data-nav-toggler data-overlay>
+        <div class="close-btn">
+          <ion-icon name="chevron-back" onclick=""></ion-icon>
+        </div>
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="#home" class="navbar-link hover-underline active">
+              <div class="separator"></div>
+
+              <span class="span">Home</span>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#menu" class="navbar-link hover-underline">
+              <div class="separator"></div>
+
+              <span class="span">Menus</span>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#about" class="navbar-link hover-underline">
+              <div class="separator"></div>
+
+              <span class="span">About Us</span>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#" class="navbar-link hover-underline">
+              <div class="separator"></div>
+
+              <span class="span">Our Chefs</span>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#" class="navbar-link hover-underline">
+              <div class="separator"></div>
+
+              <span class="span">Contact</span>
+            </a>
+          </li>
+
+        </ul>
+      </div>
 
     </div>
   </header>
@@ -213,21 +238,6 @@
               <img src="./assets/images/hero-slider-1.jpg" width="1880" height="950" alt="" class="img-cover">
             </div>
 
-            <p class="label-2 slider-reveal">Tradational & Hygine</p>
-
-            <h1 class="display-1 hero-title slider-reveal">
-              For the love of <br>
-              delicious food
-            </h1>
-
-            <p class="body-2 hero-text slider-reveal">
-              Come with family & feel the joy of mouthwatering food
-            </p>
-
-            <a href="#" class="btn btn-primary slider-reveal">
-              <span class="text text-1">View Our Menu</span>
-            </a>
-
           </li>
 
           <li class="slider-item" data-hero-slider-item>
@@ -235,22 +245,6 @@
             <div class="slider-bg">
               <img src="./assets/images/hero-slider-2.jpg" width="1880" height="950" alt="" class="img-cover">
             </div>
-
-            <p class="label-2 slider-reveal">delightful experience</p>
-
-            <h1 class="display-1 hero-title slider-reveal">
-              Flavors Inspired by <br>
-              the Seasons
-            </h1>
-
-            <p class="body-2 hero-text slider-reveal">
-              Come with family & feel the joy of mouthwatering food
-            </p>
-
-            <a href="#" class="btn btn-primary slider-reveal">
-              <span class="text text-1">View Our Menu</span>
-            </a>
-
           </li>
 
           <li class="slider-item" data-hero-slider-item>
@@ -258,22 +252,13 @@
             <div class="slider-bg">
               <img src="./assets/images/hero-slider-3.jpg" width="1880" height="950" alt="" class="img-cover">
             </div>
+          </li>
 
-            <p class="label-2 slider-reveal">amazing & delicious</p>
+          <li class="slider-item" data-hero-slider-item>
 
-            <h1 class="display-1 hero-title slider-reveal">
-              Where every flavor <br>
-              tells a story
-            </h1>
-
-            <p class="body-2 hero-text slider-reveal">
-              Come with family & feel the joy of mouthwatering food
-            </p>
-
-            <a href="#" class="btn btn-primary slider-reveal">
-              <span class="text text-1">View Our Menu</span>
-            </a>
-
+            <div class="slider-bg">
+              <img src="./assets/images/hero-slider-4.jpg" width="1880" height="950" alt="" class="img-cover">
+            </div>
           </li>
 
         </ul>
@@ -364,7 +349,7 @@
               <span class="span body-1">$20.00</span>
             </div>
 
-            <a href="#" class="btn btn-primary">
+            <a href="./allMenue.html" class="btn btn-primary">
               <span class="text text-1">View All Menu</span>
             </a>
 
@@ -491,7 +476,7 @@
     - #FOOTER
   -->
 
-  <footer class="footer section has-bg-image text-center"
+  <footer class="footer section has-bg-image text-center" id="footer"
     style="background-image: url('./assets/images/footer-bg.jpg')">
     <div class="container">
 
