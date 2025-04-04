@@ -1,0 +1,174 @@
+:root {
+    --pastel-magenta: #EAD196;
+    --quick-silver: hsla(0, 0%, 65%, 1);
+    --davys-grey: hsla(30, 3%, 34%, 1);
+    --smoky-black-1: hsla(40, 12%, 5%, 1);
+    --smoky-black-2: hsla(30, 8%, 5%, 1);
+    --smoky-black-3: hsla(0, 3%, 7%, 1);
+    --eerie-black-1: hsla(210, 4%, 9%, 1);
+    --eerie-black-2: hsla(210, 4%, 11%, 1);
+    --eerie-black-3: hsla(180, 2%, 8%, 1);
+    --eerie-black-4: hsla(0, 0%, 13%, 1);
+    --white: hsla(0, 0%, 100%, 1);
+    --white-alpha-20: hsla(0, 0%, 100%, 0.2);
+    --white-alpha-10: hsla(0, 0%, 100%, 0.1);
+    --black: hsla(0, 0%, 0%, 1);
+    --black-alpha-80: hsla(0, 0%, 0%, 0.8);
+    --black-alpha-15: hsla(0, 0%, 0%, 0.15);
+    --black-alpha-90: hsla(0, 0%, 0%, 0.90);
+  }
+  
+  *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .form-bg {
+    min-height: 100vh; /* instead of fixed height */
+    width: 100%;
+    background-image: url('../images/about-img2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* add this for center alignment */
+    padding: 2rem; /* for spacing on small screens */
+    box-sizing: border-box;
+  }
+  .form-container {
+    background-color: var(--black);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: auto;
+    width: 100%;
+    max-width: 400px;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.8) 0px 60px 40px -7px;
+    z-index: 1;
+    color: var(--white);
+  }
+  
+  
+  .form-logo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+  }
+  
+  .form-logo img {
+    height: 70px;
+  }
+  
+  .form-container h2 {
+    color: var(--weight-bold);
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  .input-item {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .input-item input , .input-item select {
+    width: 100%;
+    color: var(--quick-silver);
+    font-size: 16px;
+    padding: 12px;
+    font-weight: 300;
+    background-color: var(--eerie-black-2);
+    border: 1px solid #555;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .input-item input:hover , .input-item select:hover{
+    outline: none;
+    border: 1px solid var(--pastel-magenta);
+  }
+  .input-item select:focus , .input-item select:focus {
+    outline: 1px solid var(--pastel-magenta);
+  }
+
+  .btn-box {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+  }
+  
+  .btn-box .btn-reserve {
+    background-color: var(--pastel-magenta);
+    padding: 12px;
+    width: 100%;
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--black);
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  .btn-box .btn-reserve:hover {
+    outline: 1px solid #e9cc89;
+  }
+  
+  .availability,
+  .message {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 10px;
+    font-weight: 500;
+    color: #ffd1ec;
+  }
+  
+  /* Time picker */
+  /* Chrome, Safari, Edge, Opera */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+/* date picker */
+/* Chrome, Safari, Edge */
+input[type="date"]::-webkit-calendar-picker-indicator {
+    display: none;
+    -webkit-appearance: none;
+  }
+  
+  /* Firefox */
+  input[type="date"] {
+    appearance: none;
+    -moz-appearance: none;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    .form-container {
+      width: 90%;
+      padding: 15px;
+      margin: 2rem auto;
+    }
+  
+    .form-container h2 {
+      font-size: 18px;
+    }
+  
+    .btn-box .btn-reserve {
+      font-size: 14px;
+      padding: 10px;
+    }
+  }
+  
