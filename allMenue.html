@@ -3,6 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.jpg" type="image/x-icon">
+
      <!-- 
     - custom css link
   -->
@@ -12,10 +18,11 @@
 <body>
     <section class="section menu" aria-label="menu-label" id="menu">
         <div class="container">
-
-            <ion-icon name="chevron-back"></ion-icon>
+          <!-- Search Bar -->
+      <div class="menu-search-bar" style="text-align:center; margin-bottom: 2rem;">
+        <input type="text" id="searchInput" placeholder="Search menu..." class="input">
+      </div>
           <p class="section-subtitle text-center label-2">Special Selection</p>
-
           <h2 class="headline-1 section-title text-center">Nonveg Menu</h2>
 
           <ul class="grid-list">
@@ -807,6 +814,20 @@
               </li>
             </ul>
           </div>
-      </section>
+      </section>        
+    <script>
+       const searchInput = document.getElementById("searchInput");
+      searchInput.addEventListener("keyup", function () {
+        const filter = this.value.toLowerCase();
+        const cards = document.querySelectorAll(".menu-card");
+
+        cards.forEach((card) => {
+          const text = card.innerText.toLowerCase();
+          card.parentElement.style.display = text.includes(filter)
+            ? "block"
+            : "none";
+        });
+      });
+      </script>
 </body>
 </html>

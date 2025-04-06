@@ -359,6 +359,7 @@ body.nav-active {
   aspect-ratio: var(--width) / var(--height);
   overflow: hidden;
   background-color: var(--eerie-black-4);
+  object-fit: cover;
 }
 
 .btn-text {
@@ -825,15 +826,11 @@ body.nav-active {
 
 
 /*-----------------------------------*\
-  #MENU
-\*-----------------------------------*/
-
-/*-----------------------------------*\
     #MENU
   \*-----------------------------------*/
 
 .menu .section-title {
-  margin-block-end: 40px;
+  margin-block-end: 80px;
 }
 
 .menu .grid-list {
@@ -844,6 +841,29 @@ body.nav-active {
   display: flex;
   align-items: flex-start;
   gap: 20px;
+  flex-wrap: wrap;
+  padding: 10px 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.8);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+#chef .menu-card{
+  flex-direction: column;
+  align-items: center; /* centers content horizontally */
+  text-align: center; /* centers text inside the div */
+}
+.hover\:card:is(:hover, :focus-within) {
+  transform: scale(1.03);
+  box-shadow: rgba(0, 0, 0, 0.8) 0px 40px 40px -7px;
+  z-index: 1;
+}
+
+.menu-search-bar input.input {
+  padding: 10px;
+  font-size: 18px;
+  width: 50%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  color: var(--white);
 }
 
 .hover\:card .card-banner {
@@ -865,13 +885,18 @@ body.nav-active {
 
 .menu-card .badge {
   background-color: var(--pastel-magenta);
-  color: var(--white);
+  color: var(--black);
   font-family: var(--fontFamily-forum);
   max-width: max-content;
   line-height: var(--lineHeight-6);
   text-transform: uppercase;
   padding-inline: 10px;
   margin-block-start: 10px;
+}
+#chef .menu-card .badge{
+  display: inline-block;
+  margin-top: 0.25rem;
+  text-align: center;
 }
 
 .menu-card .span {
@@ -914,6 +939,13 @@ body.nav-active {
   justify-content: flex-start;
   align-items: center;
   gap: 15px;
+}
+#chef .title-wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* center horizontally */
+  text-align: center;
+  margin-top: 1rem;
 }
 
 .menu-card .badge {
@@ -1441,113 +1473,6 @@ textarea.input-field {
   }
 
 }
-
-/* Book a Table */
-
-.form-logo{
-  margin: 0 auto;
-  padding: 4px;
-}
-.form-logo img{
-  height: 70px;
-  margin: 0 auto;
-}
-.form-bg{
-  background-image: url('../images/service-4.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 100vh;
-  position: relative;
-  }
-  .form-bg::before {
-      content: "";
-      background: rgba(0, 0, 0, 0.5);
-      position: absolute;
-      bottom: 0;
-      top: 0;
-      left: 0;
-      right: 0;
-  }
-
-.form-container{
-      background-color: var(--black);
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
-      flex-wrap: wrap;
-      position: absolute;
-      top: 2rem;
-      left: 3rem;
-      border-radius: 5px;
-      padding: 10px 20px;
-      box-shadow: rgba(0, 0, 0, 0.8) 0px 60px 40px -7px;
-      -webkit-border-radius: 5px;
-      -moz-border-radius: 5px;
-      -ms-border-radius: 5px;
-      -o-border-radius: 5px;
-}
-.form-container h2{
-  color: var(--weight-bold);
-  font-weight: 800;
-  padding: 8px 20px;
-  margin: 5px auto;
-}
-.input-item{
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  padding: 10px 10px;
-  margin: 3px 0;
-  border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
-}
-.input-item input{
-  width: 100%;
-  color: var(--white);
-  font-size: 14px;
-  padding: 10px;
-  font-weight: 300;
-  background-color: var(--eerie-black-2);
-  border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
-}
-.input-item input:focus{
-  outline: 1px solid var(--pastel-magenta);
-}
-.btn-box{
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  padding: 8px;
-  margin-bottom: 2px;
-  border-top: 1px solid var(--pastel-magenta);
-}
-.btn-box .btn-reserve{
-  background-color: var(--pastel-magenta);
-  padding: 10px;
-  width: 100%;
-  margin: 8px 0;
-  font-size: 14px;
-  font-weight: 600;
-  color: var(--black);
-  border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
-}
-.btn-box .btn-reserve:hover{
-  outline: 1px solid #e9cc89;
-}
-
-
 
 
 /**
