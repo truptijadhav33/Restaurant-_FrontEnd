@@ -60,8 +60,20 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+     <!-- 
+    - primary meta tags
+  -->
+  <title>Flavour Fusion - Amazing & Delicious Food</title>
+  <meta name="title" content="Flavour Fusion - Amazing & Delicious Food">
+  <meta name="description" content="Flavour Fusion offers a fine dining experience with fusion delicacies, world-class chefs, and exceptional ambiance.">
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.jpg" type="image/x-icon">
   <title>Book a Table</title>
   <link rel="stylesheet" href="./assets/css/reservation.css" />
 </head>
