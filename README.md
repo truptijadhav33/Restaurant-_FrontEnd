@@ -16,7 +16,7 @@ This is a full-featured restaurant website for **Flavour Fusion**, offering onli
 │   ├── images/
 │   │   └── reservation-screenshot.png ← 📸 Preview image
 │   └── js/
-|   └── script.js
+|        └── script.js
 │
 |
 ├── index.html              ← Homepage
