@@ -12,15 +12,17 @@ This is a full-featured restaurant website for **Flavour Fusion**, offering onli
 ├── assets/
 │   ├── css/
 │   │   └── reservation.css
+|   |   └──style.css
 │   ├── images/
-│   │   └── reservation-screenshot.jpg ← 📸 Preview image
+│   │   └── reservation-screenshot.png ← 📸 Preview image
 │   └── js/
+|   └── script.js
 │
-├── reservation.php         ← Combined form + logic
+|
 ├── index.html              ← Homepage
 ├── chefs.html              ← Meet Our Chefs
 ├── menue.html              ← Delicious Menu
-├── table.php               ← (Optional external reservation form)
+├── table.php               ← Combined form + logic
 └── restaurant_db.sql       ← 📦 SQL file to create database and table
 ```
 
@@ -31,9 +33,8 @@ This is a full-featured restaurant website for **Flavour Fusion**, offering onli
 - 🗞️ Table reservation system (with availability check)
 - 📜 Stylish and responsive menu cards
 - 👨‍🍳 Chefs profile section
-- 🗺️ Integrated Google Maps link
 - 📦 Toast notifications for reservation success/error
-- 🎨 Fully responsive layout with animations
+- 🎨 Fully responsive layout
 
 ---
 
