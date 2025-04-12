@@ -857,7 +857,7 @@ body.nav-active {
   z-index: 1;
 }
 
-.menu-search-bar input.input {
+.menu-top-bar input.input {
   padding: 10px;
   font-size: 18px;
   width: 50%;
@@ -865,6 +865,41 @@ body.nav-active {
   border-radius: 5px;
   color: var(--white);
 }
+.menu-top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.menu-search {
+  flex: 1;
+  min-width: 250px;
+  max-width: 400px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  color: var(--white);
+  background-color: var(--eerie-black-2);
+}
+
+.btn-download {
+  white-space: nowrap;
+  background-color: var(--pastel-magenta);
+  color: var(--black);
+  text-decoration: none;
+  padding: 10px 16px;
+  border-radius: 5px;
+  font-weight: 600;
+}
+
+.btn-download:hover {
+  background-color: #f3dca5;
+}
+
 
 .btn-order {
   display: inline-flex;

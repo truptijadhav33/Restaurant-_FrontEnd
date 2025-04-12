@@ -123,4 +123,3 @@ addEventOnElements([heroSliderNextBtn, heroSliderPrevBtn], "mouseout", autoSlide
 window.addEventListener("load", autoSlide);
 
 
-
