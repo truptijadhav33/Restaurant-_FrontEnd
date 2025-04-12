@@ -10,6 +10,7 @@ This is a full-featured restaurant website for **Flavour Fusion**, offering onli
   - `assets/`
     - `css/`
       - `reservation.css`
+      - `style.css`
     - `images/`
       - `reservation-screenshot.png` ← 📸 Preview image
     - `js/`
