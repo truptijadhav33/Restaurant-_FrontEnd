@@ -6,7 +6,20 @@ This is a full-featured restaurant website for **Flavour Fusion**, offering onli
 
 ## 📁 Project Structure
 
-<pre> ```bash /Restaurant-_FrontEnd/ │ ├── assets/ │ ├── css/ │ │ └── reservation.css │ ├── images/ │ │ └── reservation-screenshot.png ← 📸 Preview image │ ├── js/ │ │ └── script.js │ ├── table.php ← Combined form + logic ├── cancel.php ← Cancel Reservation ├── index.html ← Homepage ├── chefs.html ← Meet Our Chefs ├── menue.html ← Delicious Menu ├── restaurant_db.sql ← 📦 SQL file to create database and table ``` </pre>
+- `Restaurant-_FrontEnd/`
+  - `assets/`
+    - `css/`
+      - `reservation.css`
+    - `images/`
+      - `reservation-screenshot.png` ← 📸 Preview image
+    - `js/`
+      - `script.js`
+  - `table.php` ← Combined form + logic  
+  - `cancel.php` ← Cancel Reservation  
+  - `index.html` ← Homepage  
+  - `chefs.html` ← Meet Our Chefs  
+  - `menue.html` ← Delicious Menu  
+  - `restaurant_db.sql` ← 📦 SQL file to create database and table
 
 
 ---
